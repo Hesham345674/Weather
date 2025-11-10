@@ -1,0 +1,118 @@
+  /* Define custom colors based on the image */
+        :root {
+            --bs-body-bg: #2d313a; /* Dark background */
+            --bs-dark-panel: #272b33; /* Darker panel color */
+            --bs-primary-blue: #3498db; /* Bright blue for links/buttons */
+        }
+        
+        /* Apply the overall dark background */
+        body {
+            background-color: var(--bs-body-bg);
+            color: white; /* Default text color is white */
+            /* Add background image effect (optional, depends on your assets) */
+            /* background-image: url('images/city-bg.jpg'); */ 
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header/Branding */
+        .site-title { font-size: 1.5rem; }
+        .site-description { font-size: 0.875rem; color: #aaa; }
+        .navbar { background-color: transparent !important; padding: 1.5rem 0; }
+        .navbar-nav .nav-link { 
+            color: #ccc !important; 
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: var(--bs-primary-blue);
+            color: white !important;
+        }
+
+        /* Search Bar */
+        .search-bar-container {
+            background-color: var(--bs-dark-panel);
+            border-radius: 30px; /* Highly rounded corners */
+            padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 3rem auto;
+            max-width: 800px;
+        }
+        .search-bar-container .form-control {
+            background-color: transparent;
+            border: none;
+            color: white;
+            box-shadow: none !important;
+        }
+        .search-bar-container .btn {
+            background-color: var(--bs-primary-blue);
+            border: none;
+            border-radius: 25px;
+            padding: 0.5rem 1.5rem;
+        }
+
+        /* Weather Panels */
+        .weather-panel {
+            background-color: var(--bs-dark-panel);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            min-height: 400px; /* Ensure consistent height */
+        }
+
+        /* Typography */
+        .large-temp {
+            font-size: 5rem; /* Very large temperature text */
+            font-weight: bold;
+            line-height: 1;
+        }
+        .small-temp {
+            color: #ccc;
+            font-size: 1.25rem;
+            display: block;
+        }
+        .day-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .weather-desc {
+            color: var(--bs-primary-blue);
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        .site-footer {
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #444;
+        }
+        .subscribe-input {
+            background-color: var(--bs-dark-panel);
+            border: none;
+            color: white;
+            border-radius: 30px 0 0 30px;
+            padding: 0.75rem 1.5rem;
+        }
+        .subscribe-btn {
+            background-color: var(--bs-primary-blue);
+            border: none;
+            border-radius: 0 30px 30px 0;
+            padding: 0.75rem 1.5rem;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        .colophon {
+            color: #888;
+            margin-top: 1rem;
+        }
+
+
+
+
+
+        
