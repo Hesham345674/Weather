@@ -10,7 +10,7 @@
             background-color: var(--bs-body-bg);
             color: white; /* Default text color is white */
             /* Add background image effect (optional, depends on your assets) */
-            /* background-image: url('images/city-bg.jpg'); */ 
+            
             background-size: cover;
             background-position: center;
         }
@@ -24,10 +24,27 @@
             padding: 0.5rem 1rem;
             border-radius: 0.25rem;
         }
+        .navbar-section{
+            background-color: red;
+        }
         .navbar-nav .nav-link.active {
             background-color: var(--bs-primary-blue);
             color: white !important;
         }
+
+
+        .main-content{
+            background-image: url(./../images/imgi_7_background.png); 
+            background-repeat: no-repeat;
+        }
+
+
+
+
+
+
+
+
 
         /* Search Bar */
         .search-bar-container {
@@ -37,6 +54,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             margin: 3rem auto;
             max-width: 800px;
+            
         }
         .search-bar-container .form-control {
             background-color: transparent;
@@ -59,6 +77,21 @@
             margin-bottom: 1.5rem;
             min-height: 400px; /* Ensure consistent height */
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         /* Typography */
         .large-temp {
@@ -83,10 +116,15 @@
         }
 
         /* Footer */
+
+        
+
+        
         .site-footer {
             padding: 2rem 0;
             margin-top: 3rem;
             border-top: 1px solid #444;
+            background-color: #2d383f;
         }
         .subscribe-input {
             background-color: var(--bs-dark-panel);
@@ -111,8 +149,25 @@
             margin-top: 1rem;
         }
 
-
+        
 
 
 
         
+
+.social-icon-btn {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    background-color: var(--bs-body-bg);
+}
+
+.social-icon-btn:hover {
+    background-color: var(--bs-info) !important; 
+}
+
+.social-icon-btn:hover i {
+    color: var(--bs-white) !important; 
+    transition: color 0.3s ease;
+}
