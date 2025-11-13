@@ -2,7 +2,7 @@ async function getLocationByIP() {
     try {
         const response = await fetch('https://api.ipify.org?format=json');
         const ipData = await response.json();
-        const ipResponse = await fetch(`http://ip-api.com/json/${ipData.ip}`);
+        const ipResponse = await fetch(`https://ip-api.com/json/${ipData.ip}`);
         const locationData = await ipResponse.json();
         return locationData.city;
     } catch (error) {
@@ -70,7 +70,7 @@ var searchInput = document.querySelector('.form-control');
 searchBtn.addEventListener('click', function() {
     var location = searchInput.value.trim();
     if(location) {
-        var url = `http://api.weatherapi.com/v1/forecast.json?key=3310605ac6424be5bce91628251211&q=${location}&days=3`;
+        var url = `https://api.weatherapi.com/v1/forecast.json?key=3310605ac6424be5bce91628251211&q=${location}&days=3`;
         fetchData(url);
     }
 });
@@ -83,6 +83,6 @@ searchInput.addEventListener('keypress', function(event) {
 
 getLocationByIP().then(city => {
     console.log("Detected city:", city);
-    var url = `http://api.weatherapi.com/v1/forecast.json?key=3310605ac6424be5bce91628251211&q=${city}&days=3`;
+    var url = `https://api.weatherapi.com/v1/forecast.json?key=3310605ac6424be5bce91628251211&q=${city}&days=3`;
     fetchData(url);
 });
