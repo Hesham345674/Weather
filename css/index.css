@@ -69,7 +69,6 @@
             padding: 0.5rem 1.5rem;
         }
 
-        /* Weather Panels */
         .weather-panel {
             background-color: var(--bs-dark-panel);
             border-radius: 10px;
@@ -80,7 +79,27 @@
 
 
 
+/* Make weather icons and details more visible */
+.weather-panel .text-muted {
+    color: #8b9cb1 !important; /* Light grey-blue for better visibility */
+}
 
+.weather-panel .fa-solid,
+.weather-panel .weather-icon {
+    color: #8b9cb1 !important; /* Same grey color for icons */
+    opacity: 0.9;
+}
+
+/* Ensure the weather description text is visible */
+.weather-panel .weather-desc {
+    color: #3498db !important; /* Keep the blue color for weather description */
+    font-weight: 500;
+}
+
+/* Make sure all text in the weather details is visible */
+.weather-panel .d-flex.align-items-center.mt-3.text-muted span {
+    color: #8b9cb1 !important;
+}
 
 
 
