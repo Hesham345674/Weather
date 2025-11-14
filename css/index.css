@@ -1,21 +1,17 @@
-  /* Define custom colors based on the image */
         :root {
-            --bs-body-bg: #2d313a; /* Dark background */
-            --bs-dark-panel: #272b33; /* Darker panel color */
-            --bs-primary-blue: #3498db; /* Bright blue for links/buttons */
+            --bs-body-bg: #2d313a; 
+            --bs-dark-panel: #272b33; 
+            --bs-primary-blue: #3498db; 
         }
         
-        /* Apply the overall dark background */
         body {
             background-color: var(--bs-body-bg);
-            color: white; /* Default text color is white */
-            /* Add background image effect (optional, depends on your assets) */
+            color: white; 
             
             background-size: cover;
             background-position: center;
         }
 
-        /* Header/Branding */
         .site-title { font-size: 1.5rem; }
         .site-description { font-size: 0.875rem; color: #aaa; }
         .navbar { background-color: transparent !important; padding: 1.5rem 0; }
@@ -46,10 +42,9 @@
 
 
 
-        /* Search Bar */
         .search-bar-container {
             background-color: var(--bs-dark-panel);
-            border-radius: 30px; /* Highly rounded corners */
+            border-radius: 30px; 
             padding: 0.5rem 0.5rem 0.5rem 1.5rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             margin: 3rem auto;
@@ -74,29 +69,26 @@
             border-radius: 10px;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            min-height: 400px; /* Ensure consistent height */
+            min-height: 400px; 
         }
 
 
 
-/* Make weather icons and details more visible */
 .weather-panel .text-muted {
-    color: #8b9cb1 !important; /* Light grey-blue for better visibility */
+    color: #8b9cb1 !important; 
 }
 
 .weather-panel .fa-solid,
 .weather-panel .weather-icon {
-    color: #8b9cb1 !important; /* Same grey color for icons */
+    color: #8b9cb1 !important; 
     opacity: 0.9;
 }
 
-/* Ensure the weather description text is visible */
 .weather-panel .weather-desc {
-    color: #3498db !important; /* Keep the blue color for weather description */
+    color: #3498db !important; 
     font-weight: 500;
 }
 
-/* Make sure all text in the weather details is visible */
 .weather-panel .d-flex.align-items-center.mt-3.text-muted span {
     color: #8b9cb1 !important;
 }

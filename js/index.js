@@ -1,15 +1,3 @@
-async function getLocationByIP() {
-    try {
-        const response = await fetch('https://api.ipify.org?format=json');
-        const ipData = await response.json();
-        const ipResponse = await fetch(`https://ip-api.com/json/${ipData.ip}`);
-        const locationData = await ipResponse.json();
-        return locationData.city;
-    } catch (error) {
-        return 'London';
-    }
-}
-
 async function fetchData(url){
     try{
         var response = await fetch(url);
@@ -23,6 +11,16 @@ async function fetchData(url){
     } catch (error){
         console.error("error fetching data;" , error);
     }  
+}
+
+async function getLocationByIP() {
+    try {
+        const response = await fetch('https://api.ip2location.io/?key=B76CC6E90CFC0325690729DA3577F72B');
+        const data = await response.json();
+        return data.city_name;
+    } catch (error) {
+        return 'Cairo';
+    }
 }
 
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
