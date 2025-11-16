@@ -73,9 +73,11 @@ searchBtn.addEventListener('click', function() {
     }
 });
 
-searchInput.addEventListener('keypress', function(event) {
-    if(event.key === 'Enter') {
-        searchBtn.click(); 
+searchInput.addEventListener('input', function(event) {
+    var location = searchInput.value.trim();
+    if(location.length > 2) { 
+        var url = `https://api.weatherapi.com/v1/forecast.json?key=3310605ac6424be5bce91628251211&q=${location}&days=3`;
+        fetchData(url);
     }
 });
 
